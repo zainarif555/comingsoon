@@ -1,0 +1,23 @@
+:root { --ink: #17221d; --cream: #f8f5ed; --accent: #e27450; --muted: #66736c; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: "DM Sans", sans-serif; }
+.hero { isolation: isolate; min-height: 100svh; overflow: hidden; position: relative; display: flex; flex-direction: column; padding: 5vw 7vw 3rem; }
+.content { max-width: 740px; margin: auto 0; padding: 5rem 0; }
+.eyebrow { display: flex; align-items: center; gap: .65rem; margin: 0 0 1.5rem; color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.eyebrow span { width: 2.35rem; height: 2px; background: var(--accent); }
+h1 { margin: 0; font: 700 clamp(3.5rem, 8vw, 7rem)/.97 "Playfair Display", Georgia, serif; letter-spacing: -.055em; }
+.intro { max-width: 550px; margin: 2rem 0; color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.65; }
+.signup { display: flex; max-width: 525px; padding: .4rem; border: 1px solid #d7d8ce; background: rgba(255,255,255,.5); box-shadow: 0 12px 30px rgba(26, 38, 30, .06); }
+input { min-width: 0; flex: 1; border: 0; outline: 0; padding: .85rem 1rem; background: transparent; color: var(--ink); font: inherit; }
+input::placeholder { color: #8c958e; }
+button { border: 0; padding: .9rem 1.25rem; cursor: pointer; color: white; background: var(--ink); font: 700 .88rem "DM Sans", sans-serif; transition: background .2s, transform .2s; }
+button:hover { background: var(--accent); transform: translateX(2px); }
+button span { font-size: 1.15rem; margin-left: .25rem; }
+.form-note { margin: .85rem 0 0; color: var(--muted); font-size: .78rem; }
+footer { z-index: 1; display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: .8rem; }
+footer a { color: inherit; text-underline-offset: .2rem; }
+.orb { z-index: -1; position: absolute; border-radius: 50%; filter: blur(1px); opacity: .75; }
+.orb-one { width: min(44vw, 660px); aspect-ratio: 1; top: -12%; right: -9%; background: #d7e2b6; }
+.orb-two { width: min(30vw, 400px); aspect-ratio: 1; right: 11%; bottom: -21%; background: #f2c0ad; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 600px) { .hero { padding: 2rem 1.5rem; } .content { padding: 4rem 0; } .signup { flex-direction: column; gap: .35rem; } button { padding: .95rem; } footer { flex-direction: column; } .orb-one { width: 90vw; right: -35%; } }
