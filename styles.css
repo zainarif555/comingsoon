@@ -34,6 +34,21 @@ footer a { color: var(--navy); font-weight: 700; text-decoration-color: var(--go
 .property-copy h3 { margin: 0; color: var(--navy); font: 700 1.55rem/1.1 "Playfair Display", Georgia, serif; }
 .property-copy > p:not(.property-type) { min-height: 4.5rem; margin: .8rem 0 1.25rem; color: var(--muted); font-size: .9rem; line-height: 1.6; }
 .property-copy a { color: var(--navy); font-size: .85rem; font-weight: 700; text-decoration-color: var(--gold); text-underline-offset: .28rem; }
+.featured-listing { background: #eeeadf; }
+.featured-property { display: grid; grid-template-columns: 1.2fr 1fr; overflow: hidden; background: #fff; box-shadow: 0 14px 35px rgba(35, 27, 68, .08); }
+.plot-photo { display: flex; align-items: center; background: #e3e7db; }
+.plot-photo img { display: block; width: 100%; height: auto; }
+.featured-copy { padding: clamp(1.5rem, 3vw, 3rem); }
+.featured-copy h3 { margin: 0; color: var(--navy); font: 700 clamp(1.8rem, 3vw, 2.6rem)/1.1 "Playfair Display", Georgia, serif; }
+.plot-price { margin: 1.5rem 0; color: var(--navy); font-size: 1.7rem; font-weight: 700; }
+.plot-price span { display: block; margin-top: .35rem; color: var(--muted); font-size: .8rem; font-weight: 400; }
+.plot-details { margin: 0; }
+.plot-details div { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid #e9e5db; }
+.plot-details dt { color: var(--muted); }
+.plot-details dd { margin: 0; font-weight: 700; text-align: right; }
+.plot-note { color: var(--muted); font-size: .9rem; line-height: 1.65; }
+.featured-property .button { font-size: .8rem; }
+@media (max-width: 1000px) { .featured-property { grid-template-columns: 1fr; } }
 .photo-credit { margin: 1.5rem 0 0; color: var(--muted); font-size: .75rem; }
 .photo-credit a { color: inherit; }
 @media (max-width: 850px) { .property-grid { grid-template-columns: 1fr; max-width: 35rem; } .property-card img { height: 15rem; } .property-copy > p:not(.property-type) { min-height: 0; } }
