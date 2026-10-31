@@ -1,12 +1,10 @@
-# Coming Soon
+# Jaidad Khana
 
-A static, responsive landing page designed for GitHub Pages.
+Active real estate website for Jaidad Khana, serving Rawalpindi and Islamabad.
 
-## Publish with GitHub Pages
+The site includes property listings, a searchable Bahria Town and DHA map library, layout zoom, area hybrid views, printed-number search on indexed layouts, and source-reported GPS references where available.
 
-1. Push these files to the repository's `main` branch.
-2. On GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, then select `main` and `/(root)`.
-4. Save. GitHub will provide the public site URL after deployment.
+Public website: https://jaidadkhana.com/
+Contact: +92 333 5553143
 
-The email form is visual only. Connect it to an email provider or serverless endpoint before collecting subscriptions.
+Map providers retain their credits. Printed-number highlights do not define surveyed boundaries.
